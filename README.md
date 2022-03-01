@@ -81,7 +81,7 @@ Power Dissipation   | 14.7 mW
 The netlist for the circuit is [here.](./FinalNetlist)
 
 <a name="ack"></a>
-## Acknowledgments
+## Acknowledgements
 - [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), Co-Founder, VLSI System Design (VSD) Corp. Pvt. Ltd.
 - [IIT Hyderabad](https://iith.ac.in/)
 - [Synopsys](https://www.synopsys.com/)
