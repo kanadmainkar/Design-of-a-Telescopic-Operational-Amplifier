@@ -28,17 +28,20 @@ As one can see, this is substantially larger than the simple opamp stage. We can
 
 <p align = 'center'>
 <img src='https://user-images.githubusercontent.com/100680231/156145418-9ef40bf5-3510-449d-b5f9-81fc776d7877.png'>
+  
 </p>
 This means that there is no significant difference in the bandwidth of the opamp. The output swing of the opamp will be: 
+
 <p align = 'center'>
 <img src='https://user-images.githubusercontent.com/100680231/156145520-10db68a4-0247-4b62-8328-8260792a6ce7.png'>
+  
 </p>
 This is in fact less than the output voltage swing of the one stage opamp or conventional opamp.
 
 <a name="rc"></a>
 ## Reference Circuit
 <p align = 'center'>
-<img src='https://user-images.githubusercontent.com/100680231/156145952-8494cb91-aff2-41c2-857f-3137ab85efba.png'>
+<img src='https://user-images.githubusercontent.com/100680231/156170242-3f73d968-018d-4698-b09b-d5851cc36290.png'>
 </p>
 
   - The circuit requires a current mirror to copy the current from one branch to the other so that the output can be single ended without making the output swing half of the fully differentrial counterpart. 
