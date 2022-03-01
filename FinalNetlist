@@ -1,0 +1,70 @@
+*  Generated for: PrimeSim
+*  Design library name: KM_lib2
+*  Design cell name: KMTCopamp3
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Tue Mar  1 11:28:16 2022
+
+.global gnd!
+********************************************************************************
+* Library          : KM_lib2
+* Cell             : KMTCopamp3
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xm0 net11 net12 net6 gnd! n105 w=0.774445m l=0.354u nf=221.27 m=1
+xm1 net5 net2 net6 gnd! n105 w=0.774445m l=0.354u nf=221.27 m=1
+xm2 net6 net9 gnd! gnd! n105 w=1.54889m l=0.354u nf=442.54 m=1
+xm3 net7 net1 net11 gnd! n105 w=0.774445m l=0.354u nf=221.27 m=1
+xm4 out net1 net5 gnd! n105 w=0.774445m l=0.354u nf=221.27 m=1
+xm5 net7 net8 net10 net3 p105 w=0.323540m l=0.148u nf=92.44 m=1
+xm6 out net8 net4 net3 p105 w=0.323540m l=0.148u nf=92.44 m=1
+xm8 net10 net7 net3 net3 p105 w=0.323540m l=0.148u nf=92.44 m=1
+xm7 net4 net7 net3 net3 p105 w=0.323540m l=0.148u nf=92.44 m=1
+v27 net9 gnd! dc=0.74
+v13 net1 gnd! dc=1.32
+v12 net8 gnd! dc=1.875
+v10 net3 gnd! dc=3
+v33 net2 gnd! dc=1.04 ac=-62.5u,0 sin ( 1.05 -62.5u 1k 0 0 0 )
+v32 net12 gnd! dc=1.04 ac=62.5u,0 sin ( 1.05 62.5u 1k 0 0 0 )
+r2 out gnd! r=1Meg
+r1 net3 out r=1Meg
+c5 out gnd! c=10p
+
+
+
+
+
+
+
+
+.tran '1u' '1' name=tran
+.dcOP
+.ac dec '2' '1' '10G' name=ac
+.op All 0 name=op
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(out) v(net12) v(net7)
+.probe dc v(out) v(net12) v(net7)
+.probe ac v(out) v(net12) v(net2) v(net7)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+.option primesim_keep_0v_dcvs_op = 1
+
+
+
+
+
+
+.end
