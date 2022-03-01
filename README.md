@@ -75,8 +75,7 @@ Power Dissipation   | 14.7 mW
 
 <a name="net"></a>
 ## Netlist
-The netlist for the circuit is as follows:
-
+The netlist for the circuit is [here.](./FinalNetlist)
 
 <a name="ack"></a>
 ## Acknowledgments
