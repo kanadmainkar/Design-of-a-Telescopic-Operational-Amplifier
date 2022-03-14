@@ -55,7 +55,7 @@ This is in fact less than the output voltage swing of the one stage opamp or con
 <img src='https://user-images.githubusercontent.com/100680231/156160003-0ef485bd-d6ee-49fa-b8dd-08eb67bb31fb.png'>
 </p>
 
-The required bias voltages are given using voltage sources present in the software. Although in practice these would be done using current mirrors and refernce current surces.
+The required bias voltages are given using voltage sources present in the software. Although in practice these would be done using current mirrors and reference current sources.
 
 <a name="sim"></a>
 ## Simulations
